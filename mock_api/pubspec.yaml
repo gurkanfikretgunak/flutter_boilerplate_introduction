@@ -1,0 +1,25 @@
+name: mock_api
+description: An example Flutter Boilerplate app built with Dart Frog Mock Api.
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+dependencies:
+  dart_frog: ^0.3.0
+  in_memory_todos_data_source:
+    path: packages/in_memory_todos_data_source
+  in_memory_users_data_source:
+    path: packages/in_memory_users_data_source
+  todos_data_source:
+    path: packages/todos_data_source
+  users_data_source:
+    path: packages/users_data_source  
+  
+
+dev_dependencies:
+  http: ^0.13.5
+  mocktail: ^0.3.0
+  test: ^1.19.2
+  very_good_analysis: ^3.1.0
