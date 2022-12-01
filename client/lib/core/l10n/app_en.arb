@@ -1,0 +1,10 @@
+{
+    "@@locale": "en",
+    "appBarTitle": "Flutter Boilerplate",
+    "@appBarTitle": {
+        "description": ""
+    },
+    "sign_in" : "Sign In",
+    "sign_up" : "Sign Up"
+    
+}
