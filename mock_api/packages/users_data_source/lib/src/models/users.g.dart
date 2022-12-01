@@ -8,6 +8,7 @@ part of 'users.dart';
 
 Users _$UsersFromJson(Map<String, dynamic> json) => Users(
       id: json['id'] as String?,
+      token: json['token'] as String? ?? '',
       email: json['email'] as String,
       isAdmin: json['isAdmin'] as bool? ?? false,
       password: json['password'] as String,
@@ -22,4 +23,5 @@ Map<String, dynamic> _$UsersToJson(Users instance) => <String, dynamic>{
       'profileUrl': instance.profileUrl,
       'phoneNumber': instance.phoneNumber,
       'isAdmin': instance.isAdmin,
+      'token': instance.token,
     };

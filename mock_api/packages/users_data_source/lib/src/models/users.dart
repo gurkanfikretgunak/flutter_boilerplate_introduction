@@ -10,6 +10,7 @@ class Users extends Equatable {
   // ignore: public_member_api_docs
   Users({
     required this.id,
+    this.token = '',
     required this.email,
     this.isAdmin = false,
     required this.password,
@@ -29,6 +30,8 @@ class Users extends Equatable {
 
   final bool isAdmin;
 
+  final String token;
+
   Users copyWith({
     String? id,
     String? email,
@@ -36,6 +39,7 @@ class Users extends Equatable {
     String? profileUrl,
     int? phoneNumber,
     bool? isAdmin,
+    String? token,
   }) {
     return Users(
       id: id ?? this.id,
@@ -44,6 +48,7 @@ class Users extends Equatable {
       profileUrl: profileUrl ?? this.profileUrl,
       phoneNumber: phoneNumber ?? this.phoneNumber,
       isAdmin: isAdmin ?? this.isAdmin,
+      token: token ?? this.token,
     );
   }
 

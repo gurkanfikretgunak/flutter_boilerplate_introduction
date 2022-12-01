@@ -39,12 +39,11 @@ Future<Response> _put(RequestContext context, String id, Users users) async {
   final newUser = await dataSource.update(
     id,
     users.copyWith(
-      email: updatedUser.email,
-      isAdmin: updatedUser.isAdmin,
-      profileUrl: updatedUser.profileUrl,
-      password: updatedUser.password,
-      phoneNumber: updatedUser.phoneNumber,
-    ),
+        email: updatedUser.email,
+        isAdmin: updatedUser.isAdmin,
+        profileUrl: updatedUser.profileUrl,
+        password: updatedUser.password,
+        phoneNumber: updatedUser.phoneNumber),
   );
 
   return Response.json(body: newUser);
