@@ -8,13 +8,19 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
+  flavor: ^2.0.0
+  flutter_dotenv: ^5.0.2
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
 flutter:
   uses-material-design: true
-
+  assets: 
+    - assets/env/.env.prod
+    - assets/env/.env.test 
+    - assets/env/.env.dev
+    - assets/env/
   
   
   
