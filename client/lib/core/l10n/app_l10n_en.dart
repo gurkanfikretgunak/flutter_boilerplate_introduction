@@ -8,8 +8,8 @@ class L10nEn extends L10n {
   String get appBarTitle => 'Flutter Boilerplate';
 
   @override
-  String get sign_in => 'Sign In';
+  String get signIn => 'Sign In';
 
   @override
-  String get sign_up => 'Sign Up';
+  String get signUp => 'Sign Up';
 }

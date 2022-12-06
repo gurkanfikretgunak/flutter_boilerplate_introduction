@@ -97,17 +97,17 @@ abstract class L10n {
   /// **'Flutter Boilerplate'**
   String get appBarTitle;
 
-  /// No description provided for @sign_in.
+  /// No description provided for @signIn.
   ///
   /// In en, this message translates to:
   /// **'Sign In'**
-  String get sign_in;
+  String get signIn;
 
-  /// No description provided for @sign_up.
+  /// No description provided for @signUp.
   ///
   /// In en, this message translates to:
   /// **'Sign Up'**
-  String get sign_up;
+  String get signUp;
 }
 
 class _L10nDelegate extends LocalizationsDelegate<L10n> {

@@ -8,7 +8,11 @@
 .buildlog/
 .history
 .svn/
+.idea
 migrate_working_dir/
+/lib/core/domain/models/test/
+/lib/core/data/network/services/test/
+
 
 # IntelliJ related
 *.iml
