@@ -26,7 +26,7 @@ class MainScreen extends StatelessWidget {
           body: Column(
             children: [
               SizedBox(
-                height: 400,
+                height: 200,
                 child: StreamBuilder<bool>(
                   stream: bloc.loading,
                   builder: (context, snapshot) {
@@ -67,7 +67,7 @@ class MainScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 400,
+                height: 200,
                 child: StreamBuilder<bool>(
                   stream: bloc.loading,
                   builder: (context, snapshot) {
