@@ -1,3 +1,4 @@
+import 'package:client/core/l10n/app_l10n.dart';
 import 'package:client/core/views/sample_view/bloc/sample_bloc.dart';
 import 'package:client/core/views/sample_view/sample_view.dart';
 // ignore: depend_on_referenced_packages
@@ -13,6 +14,8 @@ class App extends StatelessWidget {
     return FlavorBanner(
       location: BannerLocation.topStart,
       child: MaterialApp(
+        localizationsDelegates: L10n.localizationsDelegates,
+        supportedLocales: L10n.supportedLocales,
         // home: FlavorView(),
         home: Provider<MainBloc>(
           create: (_) => MainBloc(),
